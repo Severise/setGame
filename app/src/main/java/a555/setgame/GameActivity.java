@@ -28,10 +28,10 @@ public class GameActivity extends AppCompatActivity {
             card = findViewById(id + i);
             if (i != 0)
                 while (Cards.size() != i + 1) {
-                    col = (int) (Math.random() * 2);
-                    quantity = (int) (Math.random() * 2);
-                    sh = (int) (Math.random() * 2);
-                    bg = (int) (Math.random() * 2);
+                    col = (int) (Math.random() * 3);
+                    quantity = (int) (Math.random() * 3);
+                    sh = (int) (Math.random() * 3);
+                    bg = (int) (Math.random() * 3);
                     try {
                         card.attrs(cols[col], quantity, sh, bg);
                         card.attr.put("clicked", false);
